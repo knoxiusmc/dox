@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What's My Info? - Serverless Edition</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Your Fucking Info (Serverless)</h1>
+        <div class="card" id="ip-info">
+            <h2><span class="icon">🌐</span> Network Information</h2>
+            <p><strong>IP Address:</strong> <span id="ip">Loading...</span></p>
+            <p><strong>Country:</strong> <span id="country">Loading...</span> (<span id="country_iso">...</span>)</p>
+            <p><strong>State:</strong> <span id="state">Loading...</span></p>
+            <p><strong>City:</strong> <span id="city">Loading...</span></p>
+            <p><strong>Postal Code:</strong> <span id="postal">Loading...</span></p>
+            <p><strong>Coordinates:</strong> <span id="lat">...</span>, <span id="lon">...</span></p>
+            <p><strong>Organization:</strong> <span id="org">Loading...</span></p>
+            <p><strong>ISP:</strong> <span id="isp">Loading...</span></p>
+        </div>
+
+        <div class="card" id="device-info">
+            <h2><span class="icon">💻</span> Device Information</h2>
+            <p><strong>Operating System:</strong> <span id="os">Loading...</span></p>
+            <p><strong>CPU Cores:</strong> <span id="cpu">Loading...</span></p>
+            <p><strong>RAM (Estimate):</strong> <span id="ram">Loading...</span></p>
+            <p><strong>Battery:</strong> <span id="battery">Loading...</span></p>
+        </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>
